@@ -63,10 +63,10 @@ def organize_schools(schools)
   organized_schools = {}
   schools.each do |school_name, location|
     city = location[:location] #Stores city name into a variable.
-      if organized_schools[city] == nil #Checks if the city hasn't been added.
-        organized_schools[city] = [] #Adds the city key with an empty array.
-      end
-      organized_schools[city] << school_name #Shovels school into the array.
+    if organized_schools[city] == nil #Checks if the city hasn't been added.
+      organized_schools[city] = [] #Adds the city key with an empty array.
+    end
+    organized_schools[city] << school_name #Shovels school into the array.
   end
   organized_schools
 end
